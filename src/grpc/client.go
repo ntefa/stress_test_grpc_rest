@@ -6,7 +6,7 @@ import (
 	"log"
 	"time"
 
-	pb "github.com/ntefa/stress_test_grpc_rest/src/proto"
+	pb "github.com/ntefa/stress_test_grpc_rest/src/proto/helloworld"
 
 	"google.golang.org/grpc"
 )

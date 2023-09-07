@@ -6,12 +6,14 @@ import (
 	"log"
 	"net"
 
-	pb "your_project_directory/src/proto"
+	pb "github.com/ntefa/stress_test_grpc_rest/src/proto/helloworld"
 
 	"google.golang.org/grpc"
 )
 
-type server struct{}
+type server struct {
+	pb.GreeterServer
+}
 
 func StartGRPCServer() {
 	listen, err := net.Listen("tcp", ":50051")
